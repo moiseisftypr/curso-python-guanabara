@@ -1,0 +1,6 @@
+cidade = str(input('Qual cidade você mora? ')).strip()
+#dividido = (cidade.split())
+#começo = (dividido[0])
+#final = começo.title()
+#print('Santo' in final)
+print(cidade[:5].upper() == "SANTO")
