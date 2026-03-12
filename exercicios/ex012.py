@@ -1,3 +1,4 @@
-n = float(input('Qual o preço do produto? '))
-d = n * 0.05
-print(f'Novo preço com desconto: {n-d :.2f}.')
+# REVISADO
+valor = float(input('PREÇO DO PRODUTO(R$): '))
+desc = valor * 0.05
+print(f'Você ganhou um DESCONTO de 5%, o produto custará apenas R${valor - desc :.2f}.')

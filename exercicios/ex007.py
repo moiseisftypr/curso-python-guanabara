@@ -1,4 +1,4 @@
-n1 = float(input('Digite a nota da sua P1: '))
-n2 = float(input('Digite a nota da sua P2: '))
-s = n1 + n2
-print(f'A sua média ficou {s/2}.')
+# REVISADO
+n1 = float(input('NOTA DA P1: '))
+n2 = float(input('NOTA DA P2: '))
+print(f'Sua média foi: {(n1 + n2)/2 :.1f}')

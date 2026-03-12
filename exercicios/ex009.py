@@ -1,4 +1,17 @@
-n = int(input(' Digite um número inteiro: '))
-print('*' * 12)
-print(f'{n} x  1 = {n*1}\n{n} x  2 = {n*2}\n{n} x  3 = {n*3}\n{n} x  4 = {n*4}\n{n} x  5 = {n*5}\n{n} x  6 = {n*6}\n{n} x  7 = {n*7}\n{n} x  8 = {n*8}\n{n} x  9 = {n*9}\n{n} x 10 = {n*10}')
-print('*' * 12)
+# REVISADO:
+# Utilizei f-string com múltiplas linhas ('''...''') para manter o código limpo.
+# Fiz o cálculo direto nas chaves {} para evitar criar 10 variáveis desnecessárias.
+n = int(input('Digite um número: '))
+print('=' * 20)
+print(f'''
+{n} x  1 = {n*1} 
+{n} x  2 = {n*2} 
+{n} x  3 = {n*3}
+{n} x  4 = {n*4}
+{n} x  5 = {n*5}
+{n} x  6 = {n*6}
+{n} x  7 = {n*7}
+{n} x  8 = {n*8}
+{n} x  9 = {n*9}
+{n} x 10 = {n*10}''')
+print('=' * 20)

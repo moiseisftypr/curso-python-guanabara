@@ -1,2 +1,4 @@
-n = float(input('Quanto de dinheiro você tem na carteira?'))
-print(f'Você consegue comprar {n/5.76 :.2f} Dólares.')
+# REVISADO
+real = float(input('Qual valor em reais você tem na carteira? '))
+dolar = real/5.19
+print(f'Você conseguiria comprar U${dolar :.2f}.')

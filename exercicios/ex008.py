@@ -1,3 +1,3 @@
-a = float(input('Digite uma distância em metros? '))
-print(f'A medida de {a :.1f}m equivale a: \n{a/1000}km \n{a/100}hm \n{a/10}dam \n{a*10 :.0f}dm \n{a*100 :.0f}cm \n{a*1000 :.0f}mm')
-
+# REVISADO
+m = int(input('Qual medida em METROS você deseja converter?' ))
+print(f'{m} METRO(S) equivale a:  \n{m*100} CENTÍMETROS. \n{m*1000} MILÍMETROS.')
