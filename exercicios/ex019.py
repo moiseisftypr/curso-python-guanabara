@@ -1,8 +1,11 @@
+# REVISADO:
+# 'choice': Escolhe um elemento aleatório de uma sequência.
+# .upper(): Usei para padronizar a saída, independente de como o usuário digitou.
 from random import choice
-n1 = str(input('Primeiro aluno: '))
-n2 = str(input('Segundo aluno: '))
-n3 = str(input('Terceiro aluno: '))
-n4 = str(input('Quarto alurno: '))
-lista = [n1, n2, n3, n4]
-escolhido = choice(lista)
-print(f'O aluno escolhido foi {escolhido}.')
+a1 = str(input('NOME 1: '))
+a2 = str(input('NOME 2: '))
+a3 = str(input('NOME 3: '))
+a4 = str(input('NOME 4: '))
+alunos = [a1, a2, a3, a4]
+sorteado = choice(alunos)
+print(f'O aluno sorteado foi: {sorteado.upper()}.')

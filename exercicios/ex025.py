@@ -1,3 +1,4 @@
-name = str(input('Qual seu nome completo? ')).strip()
-name_up = name.upper()
-print('SILVA' in name_up)
+# REVISADO
+nome = str(input('NOME COMPLETO: ')).strip().upper()
+print('O nome informado tem "SILVA"?')
+print("SILVA" in nome)

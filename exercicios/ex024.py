@@ -1,6 +1,9 @@
-cidade = str(input('Qual cidade você mora? ')).strip()
-#dividido = (cidade.split())
-#começo = (dividido[0])
-#final = começo.title()
-#print('Santo' in final)
-print(cidade[:5].upper() == "SANTO")
+# REVISADO
+cidade = str(input('NOME DA CIDADE: ')).strip().upper()
+#dividido = cidade.split()
+#primeiro = dividido[0]
+print('A cidade informada tem "SANTO" no primeiro nome?')
+#print('SANTO' in primeiro)
+
+print(cidade[:5] == "SANTO")
+# Resolução mais simplificada.

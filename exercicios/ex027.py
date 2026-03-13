@@ -1,6 +1,7 @@
-name = str(input('Qual seu nome completo? ')).strip().split()
-#dividido = name.split()
-#primeiro = (dividido[0])
-print(f'Primeiro: {name[0]}')
-#ultimo = (dividido[-1])
-print(f'Último: {name[-1]}')
+# REVISADO:
+# .split(): Quebra o nome em "tokens" (palavras).
+# [-1]: Acesso direto ao último elemento, independente do tamanho da lista.
+# Engenharia: Uso de índices negativos evita cálculos de tamanho (len), 
+# tornando o código mais limpo e menos propenso a erros de "Off-by-one".
+nome = str(input('NOME COMPLETO: ')).strip().upper().split()
+print(f'PRIMEIRO NOME: {nome[0]} \nÚLTIMO NOME: {nome[-1]}')
