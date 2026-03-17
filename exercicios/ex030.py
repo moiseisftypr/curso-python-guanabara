@@ -1,5 +1,8 @@
-n = int(input('Digite um número: '))
-if n % 2 == 0:
-  print(f'Seu número é {n}, ele é PAR.')
+# REVISADO
+from time import sleep
+num = int(input('DIGITE UM NÚMERO: '))
+sleep(2)
+if num % 2 == 0:
+  print('O número é PAR.')
 else:
-  print(f'Seu número é {n}, ele é ÍMPAR.')
+  print('O número é ÍMPAR.')

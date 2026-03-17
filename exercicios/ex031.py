@@ -1,5 +1,9 @@
-d = float(input('Qual a distância em KM da sua viagem? '))
-if d > 200:
-  print(f'Sua viagem é de {d} KM, terá o valor de R$ {d * 0.45 :.2f}.')
+# REVISADO
+from time import sleep
+distancia = int(input('DISTÂNCIA DA VIAGEM(KM): '))
+print('CALCULANDO...')
+sleep(2.5)
+if distancia > 200:
+  print(f'O valor total da viagem será:\nR${distancia * 0.45 :.2f}.')
 else:
-  print(f'Sua viagem é de {d} KM, terá o valor de R$ {d * 0.50 :.2f}.')
+ print(f'O valor total da viagem será:\nR${distancia * 0.50 :.2f}.')

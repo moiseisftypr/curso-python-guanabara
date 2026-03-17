@@ -1,10 +1,12 @@
+# REVISADO
 from random import randint
 from time import sleep
-velo = randint(60, 100,)
-print('A velocidade na pista é de até 80 KM/H.')
-print('Verificando sua velocidade...')
-sleep(2.5)
+velo = randint(40, 120)
+print('=========== RADAR DE VELOCIDADE ============')
+sleep(3)
+multa = (velo - 80) * 7
+print(f'Você ultrapasou a uma velocidade de {velo}KM/H.')
 if velo > 80:
-  print(f'Sua velocidade atual é de {velo} KM/H. \nVocê foi multado em R${(velo - 80) *7 :.2f}.')
+  print(f'Você estava acima do limite de velocidade permitido de 80KM/H.\nSua multa será de R${multa :.2f}.')
 else:
-  print(f'Sua velocidade atual é de {velo} KM/H, está OK!')
+  print('Você estava dentro de limite de velocidade permitido de 80KM/H.\nTenha uma boa viagem!')

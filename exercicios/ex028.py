@@ -1,11 +1,14 @@
+# REVISADO
 from random import randint
 from time import sleep
-num_us = int(input('O computar escolheu um número entre 0 e 5 \nQual seria esse número? '))
-num_pc = randint(0, 5)
-print('PROCESSANDO...')
+pc_num = randint(0,5)
+print("O Computador pensou em um número de 0 a 5...")
 sleep(2)
-print(f'O número escolhido pelo computador foi {num_pc}. \nE o número que você escolheu foi {num_us}.')
-if num_us == num_pc:
-  print('PARABÉNS, você acertou!!')
+user_num = int(input('Qual seria esse número? '))
+print('Um momento, PROCESSANDO...')
+sleep(2)
+print(f'Você escolheu o número: {user_num}\nNúmero pensado pelo Computador: {pc_num}')
+if pc_num == user_num:
+  print('PARABÉNS, você acertou!!!')
 else:
-  print('Você errou! :(')
+  print('VOCÊ ERROU, boa sorte na próxima vez!')
