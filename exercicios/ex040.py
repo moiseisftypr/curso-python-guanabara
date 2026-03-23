@@ -1,9 +1,11 @@
-n1 = float(input('Qual foi sua primeira nota? '))
-n2 = float(input('Qual foi sua segunda nota? '))
-media = (n1 + n2) / 2
-if media >= 7.0:
-  print(f'Sua média foi: {media :.1f}\nParabéns, você foi APROVADO!!')
-elif media >= 5.0 <= 6.9:
-  print(f'Sua média foi: {media :.1f}\nVocê está de RECUPERAÇÃO.')
+# REVISADO
+p1 = float(input('NOTA P1: '))
+p2 = float(input('NOTA P2: '))
+media = (p1 + p2) / 2
+print(f'MÉDIA: {media :.1f}')
+if media < 5.0:
+  print(f'Você foi REPROVADO!\nEstude com mais afinco na próxima vez.')
+elif 5.0 <= media <= 6.9:
+  print(f'Você ficou em RECUPERAÇÃO!\nVoce terá outra chance, se prepare!')
 else:
-  print(f'Sua média foi: {media :.1f}\nInfelizmente, você foi REPROVADO.')
+  print(f'Você foi APROVADO!\nParabéns, você conseguiu uma ótima nota!')

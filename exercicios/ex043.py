@@ -1,14 +1,17 @@
-print('Calculadora de IMC')
-peso = float(input('Quanto você pesa?  '))
-altura = float(input('Qual é a sua altura?  '))
-imc = peso / (altura ** 2)
+# REVISADO
+print('======••• CALCUDADORA DE IMC •••======')
+peso = float(input('PESO(KG): '))
+altura = float(input('ALTURA(M): '))
+imc = peso / (altura * altura)
+print(f'Índice de Massa Corporal(IMC): {imc :.1f}')
 if imc < 18.5:
-  print(f'Seu IMC é de {imc :.1f}, você está abaixo do peso.')
+  print('Abaixo do peso ideal')
 elif 18.5 <= imc < 25:
-  print(f'Seu IMC é de {imc :.1f}, você está no peso ideal.')
+  print('Peso ideal')
 elif 25 <= imc < 30:
-  print(f'Seu IMC é de {imc :.1f}, você está com sobrepeso.')
+  print('Sobrepeso')
 elif 30 <= imc < 40:
-  print(f'Seu IMC é de {imc :.1f}, você está com obesidade.')
+  print('Obesidade')
 else:
-  print(f'Seu peso é de {imc :.1f}, você está com obesidade mórbida.')
+  print('Obesidade mórbida')
+  

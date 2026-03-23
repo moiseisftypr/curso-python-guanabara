@@ -1,69 +1,53 @@
-from random import choice
+# REVISADO
 from time import sleep
-print('Te desafio a me ganhar no JOKENPÔ! ;)')
-resposta = str(input('Você aceita o desafio? Sim ou não? ')).capitalize().strip()
-if resposta == "Sim":
-  print('Haha, beleza! Vamos começar!')
-  sleep(1)
+from random import randint
+print('========= ••• JOKENPÔ ••• =========')
+inicio = str(input('Olá! Gostaria de jogar Jokenpô [S/N]? ')).upper().strip()
+
+if "S" in inicio[0]:
+  print('BOA! Vamos começar, então!')
+
+  sleep(2)
+
+  user = int(input('ESCOLHA UMA OPÇÃO:\nPEDRA = [1]\nPAPEL = [2]\nTESOURA = [3]\nDigite o número de acordo com a opção que gostaria de selecionar: '))
+  if 1 <= user <= 3:
+    pc = randint(1, 3)
+    print('JO..')
+    sleep(1)
+    print('KEN..')
+    sleep(1)
+    print('PÔÔÔÔ!!!')
+    sleep(1)
+
+    if pc == 1:
+      print('O Computador escolheu PEDRA')
+    elif pc == 2:
+      print('O Computador escolheu PAPEL')
+    else:
+      print('O Computador escolheu TESOURA')
+      sleep(1)
+
+    if user == 1:
+      print('Você escolheu PEDRA')
+    elif user == 2:
+      print('Você escolheu PAPEL')
+    elif user == 3:
+      print('Você escolheu TESOURA')
+
+    sleep(1) 
+
+    if user == 1 and pc == 3 or user == 2 and pc == 1 or user == 3 and pc == 2:
+      print('VOCÊ GANHOU! Parabéns!')
+    elif user == 1 and pc == 2 or user == 2 and pc == 3 or user == 3 and pc == 1:
+      print('VOCÊ PERDEU, que pena, mais sorte na próxima.')
+    elif user == 1 and pc == 1 or user == 2 and pc == 2 or user == 3 and pc == 3:
+      print('EMPATE, ninguém ganhou.')
+  else:
+    print('ALGO DEU ERRADO, tente novamente!')
+
+
+elif "N" in inicio[0]:
+  print('Poxa, beleza! Deixa pra próxima.')
+
 else:
-    print('Poxa, que pena! Deixa para a próxima.')
-    sleep(100000)
-
-jok_list = ["Pedra", "Papel", "Tesoura"]
-jok_pc = choice(jok_list)
-jok_user = str(input('Escolha um! \nPedra, Papel ou Tesoura? ')).capitalize().strip()
-sleep(1)
-print('Vamos lá!')
-sleep(0.7)
-print('JO..')
-sleep(1)
-print('KEN..')
-sleep(1)
-print('PÔÔ!!..')
-sleep(1)
-
-print(f'Você escolheu {jok_user} e eu escolhi {jok_pc}.')
-
-if jok_pc == "Pedra":
-
-   if jok_user == "Pedra":
-      print('Putz, deu EMPATE!')
-
-   elif jok_user == "Papel":
-      print('você VENCEU! Parabéns, você é bom!')
-
-   elif jok_user == "Tesoura":
-      print('Eu VENCI! Haha')
-
-   else:
-      print('Opção inválida, tente novamente.')
-
-
-elif jok_pc == "Papel":
-
-   if jok_user == "Pedra":
-      print('Eu VENCI! Haha')
-
-   elif jok_user == "Papel":
-      print('Putz, deu EMPATE!')
-
-   elif jok_user == "Tesoura":
-      print('Você VENCEU! Parabéns, você é bom!')
-
-   else:
-      print('Opção inválida, tente novamente.')
-
-
-elif jok_pc == "Tesoura":
-
-   if jok_user == "Pedra":
-      print("Você VENCEU! Parabéns, você é bom!")
-
-   elif jok_user == "Papel":
-      print('Eu VENCI! Haha')
-
-   elif jok_user == "Tesoura":
-      print('Putz, deu EMPATE!')
-
-   else:
-      print('Opção inválida, tente novamente.')
+  print('Não deu pra entender, repita por favor.')

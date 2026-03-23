@@ -1,5 +1,6 @@
+# REVISADO
 num = int(input('Digite um número: '))
-conversao = int(input('Binário [1] \nOctal [2] \nHexadecimal [3] \nDigite o número da base de conversão escolhida:'))
+conversao = int(input('Binário: [1] \nOctal: [2] \nHexadecimal: [3] \nDigite o número da base de conversão escolhida: '))
 if conversao == 1:
   print(f'{num} convertido para BINÁRIO: {bin(num)[2:]}.')
 elif conversao == 2:

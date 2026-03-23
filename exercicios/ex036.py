@@ -1,9 +1,11 @@
-print('Simulacão de Empréstimo Bancário.')
-casa = float(input('Qual o valor do imóvel? '))
-salario = float(input('Qual o salário do comprador? '))
-prazo = float(input('Em quantos anos pretende quitar o bem? '))
-prestacao = casa / (prazo * 12)
-if prestacao > salario * 0.30:
-  print(f'Infelizmente, seu empréstimo foi NEGADO.\nPois sua prestação (R$ {prestacao :.2f}) excederia o valor máximo permitido, de acordo com seu salário (R$ {salario :.2f}).')
+# REVISADO
+print('=========== EMPRESTIMO BANCÁRIO ===========')
+casa = float(input('VALOR DO IMÓVEL(R$): '))
+renda = float(input('RENDA ATUAL(R$): '))
+anos = int(input('QUANTO TEMPO P/ QUITAÇÃO(ANOS): '))
+parcela = casa / (anos * 12)
+limite = renda * 0.30
+if parcela > limite:
+ print(f'EMPRÉSTIMO NEGADO!\nA prestação(R${parcela :.2f}) estimada excede 30% da sua renda atual(R${renda :.2f}), sendo um dos percalços para a não aceitação.')
 else:
-  print(f'PARABÉNS, seu empréstimo foi APROVADO!\nSua prestação ficará no valor de R$ {prestacao :.2f} mensais')
+  print(f'EMPRÉSTIMO ACEITO!\nValor da prestação(mensal): R${parcela :.2f}\nPrazo p/ quitação(meses): {anos * 12}')
