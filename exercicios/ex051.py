@@ -1,5 +1,16 @@
-a1 = int(input('Digite o Primeiro Termo: '))
-r = int(input('Digite a Razão: '))
-for n in range(1, 11):
-  an = a1 + (n - 1) * r
-  print(f'{n} Termo = {an}')
+# REVISADO
+from time import sleep
+
+print(' ====== ••• PROGRESSÃO ARITMÉTICA ••• ======')
+
+n = int(input('PRIMEIRO TERMO: '))
+r = int(input('RAZÃO: '))
+
+print('=-' * 20)
+
+for c in range (1, 11):
+  print(f'{c}º termo: {n}')
+  n += r # += significa: "pegue o valor atual e some algo a ele".
+  sleep(0.5)
+
+print('=-' * 20)

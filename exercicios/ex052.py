@@ -1,14 +1,14 @@
-num = int(input('Digite um número: '))
+# REVISADO
+n = int(input('DIGITE UM NÚMERO: '))
+
 cont = 0
-for c in range(1, num + 1):
-  if num % c == 0:
-    print('\033[33m', end='')
-    tot += 1
-  else:
-    print('\033[31m', end='')
-  print(f'{c} ', end='')
-print(f'\n\033[mO número {num} foi divisível {cont} vezes.')
-if tot == 2:
-  print('E por isso ele é PRIMO.')
+
+for c in range(1, n + 1):
+  if n % c == 0:
+    cont += 1
+
+if cont == 2:
+  print(f'O número {n} é um número PRIMO.')
+
 else:
-  print('E por isso ele NÃO É PRIMO.')
+  print(f'O número {n} não é um número PRIMO.')

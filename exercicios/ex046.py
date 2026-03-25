@@ -1,9 +1,13 @@
+# REVISADO
 from time import sleep
 
-print('CONTAGEM REGRESSIVA ANO NOVO 2K26')
+iniciar = int(input('DIGITE [0] P/ INICIAR A CONTAGEM REGRESSIVA: '))
 
-for c in range(10, -1, -1):
-  print(f'{c}...')
-  sleep(1)
+if iniciar == 0:
+  for c in range(10, 0, -1):
+   print(f'{c}..')
+   sleep(1)
+  print('KABUUUUUUUM!')
 
-print('FELIZ ANO NOVO!!!')
+else:
+ print('TECLA INCORRETA, tente novamente.')
