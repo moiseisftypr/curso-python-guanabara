@@ -1,7 +1,19 @@
-a1 = int(input('Digite o Primeiro Termo: '))
-r = int(input('Digite a Razão: '))
+# REVISADO
+from time import sleep
+
+print(' ====== ••• PROGRESSÃO ARITMÉTICA ••• ======')
+
+t = int(input('Digite o primeiro termo: '))
+r = int(input('Digite a razão: '))
 c = 1
-while c < 11:
-  an = a1 + (c - 1) * r
-  print(f'{c}º Termo = {an}')
+total_termos = 10
+
+print('=' * 45)
+
+while c <= total_termos:
+  print(f'{c}º termo = {t}')
+  t += r
   c += 1
+  sleep(0.5)
+
+print('=' * 45)

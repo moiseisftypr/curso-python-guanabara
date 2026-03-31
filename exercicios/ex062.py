@@ -1,19 +1,38 @@
-a1 = int(input('Digite o Primeiro Termo: '))
-r = int(input('Digite a Razão: '))
+# REVISADO
+from time import sleep
+
+print('====== ••• PROGRESSÃO ARITMÉTICA ••• ======')
+
+t = int(input('Digite o primeiro termo: '))
+r = int(input('Digite a razão: '))
 c = 1
-add = 0
-while c < 11:
-  an = a1 + (c - 1) * r
-  print(f'{c}º Termo = {an}')
+total_termos = 10
+
+print('=' * 45)
+
+while c <= total_termos:
+  print(f'{c}º termo = {t}')
+  t += r
   c += 1
-while c > 9:
-  add = int(input('Quantos termos quer adicionar: '))
-  if add > 0:
-    add += c
-    while add > c:
-      an = a1 + (c - 1) * r
-      print(f'{c}º Termo = {an}')
-      c += 1
-  elif add == 0:
-   c = 9
-   print('PROGRAMA ENCERRADO.')
+  sleep(0.5)
+
+
+mais_termos = 1
+
+while mais_termos != 0:
+
+  print('=' * 45)
+
+  mais_termos = int(input('Digite quantos mais termos gostaria de ver [0 p/ FINALIZAR o programa]: '))
+
+  total_termos += mais_termos
+
+  print('=' * 45)
+
+  while c <= total_termos:
+    print(f'{c}º termo = {t}')
+    t += r
+    c += 1
+    sleep(0.5)
+
+print('Programa finalizado!')
